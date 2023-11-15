@@ -1,0 +1,41 @@
+
+#header{
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 3px 10px #471c34;
+}
+
+#navigation {
+    list-style-type: none;
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: #ffeaef;
+
+}
+
+li a {
+    float: right;
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-right: 2px solid black;
+    border-left: 2px black;
+    min-width: 60px;
+    text-align: center;
+}
+li a:hover{
+    background-color: #e79eb6;
+
+}
+
+#featured {
+    
+    border-style: double;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+     
+}
