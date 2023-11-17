@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finals</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <title>LiteralHat Merch</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    var frontMerch1 = "shirt1_front.png";
+    var hoverMerch1 = "shirt1_back.png";
+
+    var frontMerch2 = "shirt2_front.png";
+    var hoverMerch2 = "shirt2_back.png";
+
+    var frontMerch3 = "croptop-front.png";
+    var hoverMerch3 = "croptop-back.png";
+
+    var frontMerch4 = "hoodie_front.png";
+    var hoverMerch4 = "hoodie_back.png";
+
+    $("#merch1").hover(
+      function() {
+        $(this).attr("src", hoverMerch1);
+      },
+      function() {
+        $(this).attr("src", frontMerch1);
+      }
+    );
+
+    $("#merch2").hover(
+        function() {
+          $(this).attr("src", hoverMerch2);
+        },
+        function() {
+          $(this).attr("src", frontMerch2);
+        }
+      );
+
+      $("#merch3").hover(
+        function() {
+          $(this).attr("src", hoverMerch3);
+        },
+        function() {
+          $(this).attr("src", frontMerch3);
+        }
+      );
+
+      $("#merch4").hover(
+        function() {
+          $(this).attr("src", hoverMerch4);
+        },
+        function() {
+          $(this).attr("src", frontMerch4);
+        }
+      );
+
+    var images = ["featured1.png", "featured2.png", "featured3.png"];
+    var currentIndex = 0;
+    var currentImageElement = document.getElementById("currentImage");
+
+    function showNextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      var nextImageSrc = images[currentIndex];
+      currentImageElement.style.opacity = 0; // Fade out the current image
+
+      setTimeout(function() {
+        currentImageElement.src = nextImageSrc;
+        currentImageElement.style.opacity = 1; // Fade in the new image
+      }, 500); // Wait for the fade-out transition to complete (0.5s)
+    }
+
+    // Automatically show the next image every 5 seconds
+    setInterval(showNextImage, 5000);
+
+  });
+    </script>
     
+</head>
+
+<body>
+
+<header id = "header">
+    <ul id = "navigation">
+        <li><a href = "contact-placeholder">Contact</a></li>
+        <li><a href = "about-placeholder">About</a></li>
+        <li><a href = "Final.html">Home</a></li>
+        <li id = "logo"><img id= "logo" src="sitelogo.png"></li>
+    </ul>
+</header>
+<hr>
+<br>
+<h1>WELCOME TO LITERALHAT'S MINI MERCH SHOP PREVIEW</h1>
+<br>
+<hr>
+<br>
+
+<div id="featured">
+    <h1>Featured Posters!</h1>
+    <img id="currentImage" src="featured1.png">
+
+</div>
+<br><br>
+<h1>Available Tops</h1>
+<div id = "products">
+    
+    <div id = "first-product">
+        <img id="merch1" src="shirt1_front.png">
+        <br>
+        <p>Hat's Shirt</p>
+    </div>
+
+    <div id = "second-product">
+        <img id="merch2" src="shirt2_front.png">
+        <p>Flamboyance</p>
+    </div>
+
+    <div id = "third-product">
+        <img id="merch3" src="croptop-front.png">
+        <p>Dove Croptop</p>
+    </div>
+
+    <div id = "fourth-product">
+        <img id="merch4" src="hoodie_front.png">
+        <p>Hoodie</p>
+    </div>
+
+
+</div>
+
 </body>
 </html>
