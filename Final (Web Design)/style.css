@@ -1,41 +1,123 @@
 
-#header{
+html{
+    background-color: rgb(44, 44, 44);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#header {
     position: sticky;
     top: 0;
-    box-shadow: 1px 3px 10px #471c34;
+    box-shadow: 1px 3px 10px rgb(78, 78, 78);
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
 
 #navigation {
-    list-style-type: none;
+    color: white;
+    list-style-type: none; 
     padding: 50px;
     padding-top: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     overflow: hidden;
-    background-color: #ffeaef;
+    background-color: rgb(19, 19, 19);
 
 }
 
 li a {
     float: right;
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px 15px;
     text-decoration: none;
-    border-right: 2px solid black;
-    border-left: 2px black;
-    min-width: 60px;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-left: 2px rgb(255, 255, 255);
+    min-width: 50px;
     text-align: center;
-}
-li a:hover{
-    background-color: #e79eb6;
 
+}
+
+li :hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+#logo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
 }
 
 #featured {
     
     border-style: double;
+    border-color: white;
+    font-size: large;
     margin-left: 10%;
     margin-right: 10%;
     padding: 20px;
-     
 }
+
+#currentImage{
+    height: auto;
+    width: 100%;
+    transition: 1s;
+}
+
+#products {
+    display: flex;
+    background-color: black;
+    margin: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+
+#products > div{
+    background-color: #f1f1f163;
+    margin: 20px;
+    font-size: 30px;
+    margin-bottom: px;
+    
+}
+
+p {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    width: 400px;
+    margin: 0px;
+    
+}
+
+#merch1 {
+    height: auto;
+    width: 400px;
+}
+
+#merch2 {
+    height: auto;
+    width: 400px;
+    
+}
+
+#merch3 {
+    height: auto;
+    width: 400px;
+}
+
+#merch4 {
+    height: auto;
+    width: 400px;
+}
+
